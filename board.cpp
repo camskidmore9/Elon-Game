@@ -1,5 +1,5 @@
 #include "board.h"
-#include <windows.h>
+#include <chrono>
 
 
 
@@ -346,17 +346,17 @@ void gameBoard::vroomvroomQuestion(){
                     cout << "You are now the Starman.\n";
                     cout << "Prepare for liftoff.\n";
 
-                    timer(1);
+                    //timer(1);
                     cout << "5\n";
-                    timer(1);
+                    //timer();
                     cout << "4\n";
-                    timer(1);
+                    //timer();
                     cout << "3\n";
-                    timer(1);
+                    //timer();
                     cout << "2\n";
-                    timer(1);
+                    //timer();
                     cout << "1\n";
-                    timer(1);
+                    //timer();
 
 
                     cout <<"  ______    ______   __       __  ________         ______   __     __  ________  _______  " << endl;
@@ -437,19 +437,8 @@ void gameBoard::StoryAndRules(){
 }
 
 //A timer for int seconds
-void gameBoard::timer(int sec){
-    Sleep(sec*1000);
-}
+//void gameBoard::timer(int sec){
+//    sleep_for(seconds(1));
+//}
 
-/*--------------END MEMBER FUNCTIONS------------*/
-
-
-
-
-
-
-
-
-
-
-//Nice
+//*--------------END MEMBER FUNCTIONS-----------/
